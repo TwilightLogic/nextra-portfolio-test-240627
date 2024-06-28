@@ -6,7 +6,8 @@ export default {
     const router = useRouter()
     const isPhotosPage = router.pathname.includes('photos')
 
-    console.log(isPhotosPage)
+    console.log('title', title)
+    console.log(meta)
 
     return (
       <>
@@ -23,11 +24,5 @@ export default {
   },
   readMore: 'Read More →',
   postFooter: null,
-  darkMode: false,
-  navs: [
-    {
-      url: 'https://github.com/shuding/nextra',
-      name: 'Nextra'
-    }
-  ]
+  darkMode: false
 }
